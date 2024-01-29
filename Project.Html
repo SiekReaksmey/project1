@@ -1,0 +1,176 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project jQuery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Project.css">
+     <script src="project.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><body>
+        <h1>Good morning</h1>
+        <div class=" backimg container-fluid d-flex">
+        <h2>AIB Portal</h2>
+        <div class="display ">
+            <div class="icon d-flex people-icon">
+                <p><i class="bi bi-person-circle"></i> Siek Reaksmey </p>
+                <i class="bi bi-bell-fill"></i>
+            </div>
+        </div>
+    </div>
+    <div class="show-content d-flex">
+        <div class="content">
+            <p class="icon-show"><i class="bi bi-bookmarks"></i>My Major</p>
+            <p class="icon-show"><i class="bi bi-book-fill"></i>My Courses</p>
+            <p class="icon-show"><i class="bi bi-bar-chart-fill"></i>My Grades</p>
+            <p class="icon-show"><i class="bi bi-journal-bookmark-fill"></i>My Library</p>
+            <p class="icon-show"><i class="bi bi-bag-heart-fill"></i>Work Experience</p>
+            <p class="icon-show"><i class="bi bi-pencil-square"></i>Requests</p>
+            <p class="icon-show"><i class="bi bi-award-fill"></i>My Achievement</p>
+        </div>
+        <div class="content-from">
+            <div class="menu d-flex">
+                <p class="menu-list" ><i class="bi bi-list"></i> Menu</p>
+                <!-- <div class="list">
+                        <p class="li1"><i class="bi bi-person-fill"></i> Student Permission</p>
+                        <p class="li1"><i class="bi bi-view-list"></i> Student Grievance</p>
+                </div> -->
+                <p class="Per-request"><i class="bi bi-bell-fill"></i> Permission Request</p>
+            </div>
+            <div class="form-content ">
+                <div class="form">
+                    <h3>Student Permission</h3>
+                    <div class="show-form">
+                        <form action="">
+                            <select name="name-student" id="name-student">
+                                <option value="Student Permission">Student Permission</option>  
+                                <option value="Change Permission">Change Permission</option>
+                            </select>
+                            <label for="" class="Student-id">Student Id :</label>
+                            <label for="" class="ID">0004477</label>
+                            <label for="" class="Student-id">Name :</label>
+                            <label for="" class="ID">Siek Reaksmey</label>
+                            <label for="" class="Student-id">Sex :</label>
+                            <label for="" class="ID">F</label>
+                            <label for="" class="Student-id">Telephone :</label>
+                            <label for="" class="ID">+855965172742</label>
+                            <label for="" class="Student-id">Major<span>*</span></label>
+                            <select name="name-student" id="name-student">
+                                <option value="Student Permission">Business IT(Bachelor)</option>  
+                            </select>
+                            <label for="" class="Student-id">Session<span>*</span></label>
+                            <select name="name-student"   id="option">
+                                <option >15/1/2024 Mon 14:15-15:45 PM</option>  
+                                <option >16/1/2024 Thr 14:15-15:45 PM</option>                     
+                                <option >17/1/2024 Wen 14:15-15:45 PM</option>                     
+                                <option >18/1/2024 Fri 14:15-15:45 PM</option>                                        
+                            </select>
+                            <label for="" class="Student-id" id="reason">Reason<span>*</span></label>
+                            <p id="require" style="color: red; margin-left: 5vh;">Please Fill out this form.</p>
+                            <input type="text-area" placeholder="Write your reason here..." id="textArea">
+                            <div class="button-add d-flex">
+                                <button id="bi-plus-button"><i class="bi bi-plus"></i></button>
+                                <button id="Add-button">Add</button>
+                            </div>
+                            <div class="container box">
+                                <div class="row box-col">
+                                    <div class="col-5 col1">Session</div>
+                                    <div class="col-4 col3">Reason</div>
+                                    <div class="col-3 col2">Action</div>
+                                </div>
+                                <div class="row box-col-new">
+                                    <div class="col-5 " id="Session" ></div>
+                                    <div class="col-4  " id="reason" style="margin-bottom:10px ;">
+                                        <p id="show">No matching recods found</p>
+                                    </div>
+                                    <div class="col-3 " id="trust"></div>
+                                </div>
+                            </div>
+                            <div class="but-show d-flex">
+                                <div class="submit d-flex">
+                                    <button class="ko"><i class="bi bi-check-lg"></i></button>
+                                    <button class="sub">Submit</button>
+                                </div>
+                                <div class="cancell d-flex">
+                                    <button class="ko-x"><i class="bi bi-x"></i></button>
+                                    <button class="cen">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="overscroll">
+                    <div class="from-improve">
+                        <h4>Permission details</h4>
+                        <p id="date">Date: 5/9/2023 9:33:00 AM</p>
+                        <form action="">
+                            <label for="" class="stud">StudentId :</label><br>
+                            <input type="text" class="static" value="0004477"><br>
+                            <label for="" class="stud">Name:</label><br>
+                            <input type="text" class="static" value="Siek Reaksmey"><br>
+                            <label for="" class="stud">Sex:</label><br>
+                            <input type="text" class="static" value="F"><br>
+                            <label for="" class="stud">Telephone :</label><br>
+                            <input type="text" class="static" value="+855965172742"><br>
+                            <label for="" class="stud">Major:</label><br>
+                            <input type="text" class="static" value="Business IT"><br>
+                            <label for="">Session:</label><br>
+                            <input type="text" id="Show-Answer"><br>
+                            <label for="">Reason:</label><br>
+                            <input type="text-area"  id="Show-Reason">
+                            <p class="request-text"></p>
+                        </form>
+                        <div class="full d-flex">
+                            <div class="reason d-flex">
+                                <button class="back"><i class="bi bi-backspace"></i></button>
+                                <button class="close">Close</button>
+                            </div>
+                            <div class="reason1 d-flex">
+                                <button class="file-x"><i class="bi  bi-x "></i></button>
+                                <button class="cancel" id="Delete">Request Cancel</button>
+                            </div>
+                        </div>
+                        <div class="improve-reject d-flex">
+                            <div class="improve">
+                                <button class="check-improve"><i class="bi bi-check-circle-fill"></i>Improve</button>
+                            </div>
+                            <div class="reject">
+                                <button class="check-reject"><i class="bi bi-x-circle-fill"></i>Reject</button>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <div class="notification">
+                <div class="row d-flex row-noti">
+                    <div class="col-6 p-0">
+                        <h4 class="h4">List Notification</h4>
+                    </div>
+                    <div class="col-6  text-end">
+                        <p class="button-close"><i class="bi bi-x-square-fill"></i></p>
+                    </div>
+                </div>
+                <div class="row text-noti " data-stutus="Approved" >
+                    <div class="col-10 col8">
+                        <p class="text-p"><i class="bi bi-circle"></i><b>Mr.Hen Sovatra</b> has <b style="color: green;">Approved</b> your request.</p>
+                    </div>
+                    <div class="col-2 col4 text-end">
+                        <p class="View1"><b style="color:green">View</b></p>
+                    </div>
+                </div>
+                <div class="row text-noti" data-stutus="Rejected" >
+                    <div class="col-8 col8">
+                        <p class="text-p"><i class="bi bi-circle"></i><b>Mr.Hen Sovatra</b> has <b style="color: red;">Rejected</b> your request.</p>
+                    </div>
+                    <div class="col-4 col4 text-end">
+                        <p class="View1"><b style="color:red">View</b></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
